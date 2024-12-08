@@ -51,6 +51,12 @@
       "dependsOn": ["^build"]
     }
   },
+  "release": {
+    "projectsRelationship": "independent",
+    "changelog": {
+      "projectChangelogs": true
+    }
+  },
   "generators": {
     "@nx/react": {
       "application": {
@@ -64,7 +70,8 @@
       },
       "library": {
         "style": "tailwind",
-        "linter": "eslint"
+        "linter": "eslint",
+        "unitTestRunner": "vitest"
       }
     }
   }
